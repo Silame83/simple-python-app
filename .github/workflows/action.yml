@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: Silame83/simple-python-app@master
-        with:
-          fetch-depth: 1
       
       - name: Docker Build & Push to Docker Hub
         uses: Silame83/simple-python-app@master
