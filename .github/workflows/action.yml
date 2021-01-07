@@ -9,9 +9,9 @@ jobs:
       - name: Docker Build & Push to Docker Hub
         uses: Silame83/simple-python-app@master
         env:
-          USERNAME: ${{ secrets.Silame83 }}
-          PASSWORD: ${{ secrets.Orthio99 }}
+          USERNAME: Silame83
+          PASSWORD: Orthio99
           DOCKERFILE: "Dockerfile"
-          IMAGE_NAME: "USERNAME/IMAGE_NAME"
+          IMAGE_NAME: "Silame83/spa"
           TAG_NAME: "v0.0.1"
           LATEST: "true"
