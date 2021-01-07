@@ -12,6 +12,6 @@ jobs:
           USERNAME: Silame83
           PASSWORD: Orthio99
           DOCKERFILE: "Dockerfile"
-          IMAGE_NAME: "Silame83/spa"
+          IMAGE_NAME: "silame83/spa"
           TAG_NAME: "v0.0.1"
           LATEST: "true"
