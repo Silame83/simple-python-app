@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Docker Build & Push to Docker Hub
         uses: Silame83/simple-python-app@master
+        with:
+          args: --docker
         env:
           USERNAME: Silame83
           PASSWORD: Orthio99
