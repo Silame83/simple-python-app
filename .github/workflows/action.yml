@@ -6,10 +6,13 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Docker Build & Push to Docker Hub
+      - name: Checkout
         uses: Silame83/simple-python-app@master
         with:
-          args: --docker
+          fetch-depth: 1
+      
+      - name: Docker Build & Push to Docker Hub
+        uses: Silame83/simple-python-app@master
         env:
           USERNAME: Silame83
           PASSWORD: Orthio99
