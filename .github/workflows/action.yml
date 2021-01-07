@@ -6,13 +6,12 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Docker Build & Push to GitHub Package
+      - name: Docker Build & Push to Docker Hub
         uses: Silame83/simple-python-app@master
         env:
-          USERNAME: ${{ secrets.GITHUB_USERNAME }}
-          PASSWORD: ${{ secrets.GH_PERSONAL_TOKEN }}
-          REGISTRY: "docker.pkg.github.com"
+          USERNAME: ${{ secrets.Silame83 }}
+          PASSWORD: ${{ secrets.Orthio99 }}
           DOCKERFILE: "Dockerfile"
-          IMAGE_NAME: "IMAGE_NAME"
+          IMAGE_NAME: "USERNAME/IMAGE_NAME"
           TAG_NAME: "v0.0.1"
           LATEST: "true"
